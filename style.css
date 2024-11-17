@@ -1,0 +1,233 @@
+/* font here */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Noto+Color+Emoji&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Color Palette */
+    --primary-color: #10375C; /* Deep blue for main backgrounds or headers */
+    --secondary-color: #EB8317; /* Bright orange for accents, buttons, or highlights */
+    --tertiary-color: #f39923; /* Vibrant yellow for emphasis or secondary buttons */
+    --light-accent: #F4F6FF; /* Soft light for backgrounds or containers */
+
+    /* Font Colors */
+    --font-color-primary: #001e39; /* Primary font color, matches primary for high contrast */
+    --font-color-secondary: #606060; /* Secondary font color for muted or less prominent text */
+    --font-color-light: #FFFFFF; /* Light font color for dark backgrounds */
+
+    /* Navigation Colors */
+    --nav-bg: #10375C; /* Navigation background color */
+    --nav-link: #F4F6FF; /* Navigation link color */
+    --nav-link-hover: #F3C623; /* Navigation link hover effect */
+
+    /* Font */
+    --font-log: 'poppins',sans-serif;
+}
+
+
+/* nav section start  */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-bg);
+    padding: 1% 15%;
+    align-items: center;
+}
+header > h1{
+    color: var(--nav-link);
+    font-family: var(--font-log);
+}
+ul{
+    display: flex;
+    gap: 40px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    font-family: var(--font-log);
+    color: var(--nav-link);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+ul li a:hover{
+    color: var(--nav-link-hover);
+}
+
+/* nav section end */
+
+
+/* hero-section start */
+
+.hero-section{
+    height: 40vh;
+    background-color: var(--primary-color);
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-section h1{
+    color: var(--tertiary-color);
+    font-family: var(--font-log);
+    font-size: 48px;
+    font-weight: 900;
+}
+.hero-section h2{
+    color: var(--font-color-light);
+    font-family: var(--font-log);
+    font-size: 18px;
+}
+.hero-section img{
+    width: 500px;
+    height: 280px;
+}
+.signup{
+    padding: 5px 25px;
+    background-color: #B8001F;
+    color: var(--font-color-light);
+    font-weight: 800;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font-log);
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.signup:hover{
+    background-color: #0062ff;
+    transition: 0.6s;
+}
+/* hero-section end */
+
+
+/* services section */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-log);
+    color: var(--font-color-primary);
+    height: 60vh;
+}
+.heading h1{
+    margin: 40px 0;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.service-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-link-hover);
+    border-radius: 20px;
+}
+.service-items h2{
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: medium;
+}
+.img img{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.img .service-items:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 0 10px ;
+    transition: .6s;
+}
+
+
+
+/* Quote section */
+
+.quote-section{
+    background-color: #cecece;
+    font-family: var(--font-log);
+}
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    padding: 100px 340px 0;
+    margin: 0;
+    color: #001e39;
+}
+.author {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 350px 80px 0;
+    text-align: right;
+    margin: 0;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+}
+
+
+/* call to action section */
+
+.call-section{
+    padding: 100px 13%;
+}
+.box{
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 20px;
+    align-items: center;
+}
+.call > h2,p{
+    font-family: var(--font-log);
+    color: var(--font-color-light);
+}
+.call > h2{
+    font-size: 30px;
+}
+.call p{
+    font-size: 20px;
+}
+.box button{
+    background-color: var(--nav-bg);
+    box-shadow: none;
+    padding: 5px 30px;
+    font-family: var(--font-log);
+    border: 2px solid var(--font-color-light);
+    border-radius: 20px;
+    color: var(--font-color-light);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: var(--secondary-color);
+    color: var(--font-color-light);
+    transition: 0.6s;
+}
+/* footer */
+
+footer{
+    background-color: var(--nav-bg);
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+footer p{
+    font-size: 18px;
+}
+/* global css */
+span{
+    color: var(--tertiary-color);
+}
