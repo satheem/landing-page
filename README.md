@@ -39,7 +39,12 @@ The project demonstrates the creation of a clean and structured landing page usi
 
 ### Desktop View:
 ![Desktop View](
-![image](https://github.com/user-attachments/assets/b1e96de2-45d0-44eb-89f6-a807c5315cc7)
+![image](https://github.com/user-attachments/assets/63ce8fee-e1a2-459d-b045-e909c8e4b056)
+
+![image](https://github.com/user-attachments/assets/87327d33-2913-4956-b281-af3b5000d467)
+
+![image](https://github.com/user-attachments/assets/e54c5fbb-1715-4b26-a63a-d79a7771c29c)
+
 
 
 ---
